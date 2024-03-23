@@ -27,9 +27,7 @@
             cursor: pointer;
         }
     </style>
-    <title>
-        <?= $title ?>
-    </title>
+    <title><?= $title ?></title>
 
     <?= $this->meta($meta) ?>
 
@@ -41,17 +39,9 @@
         <div class="row g-4">
             <div class="col-md-4 col-lg-3">
                 <ul class="nav flex-column d-none d-md-block">
-                    <li class="nav-item">
-                        <a class="nav-link text-dark text-decoration-underline fw-bolder fs-4" href="/">
-                            <?= config('blog.name') ?>
-                        </a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link text-dark text-decoration-underline fw-bolder fs-4" href="/"><?= config('blog.name') ?></a></li>
                     <?php foreach (config('blog.header_menu') as $link => $text): ?>
-                        <li class="nav-item">
-                            <a class="nav-link text-danger fw-bolder" href="<?= $link ?>">
-                                <?= $text ?>
-                            </a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link text-danger fw-bolder" href="<?= $link ?>"><?= $text ?></a></li>
                     <?php endforeach; ?>
                 </ul>
                 <div class="division d-sm-block d-xs-block d-md-none d-lg-none">
