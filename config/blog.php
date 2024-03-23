@@ -2,23 +2,19 @@
 
 return [
     // blog
-    'name' => 'Naman Kumar',
-    'url' => 'https://localhost:11111/',
+    'name' => 'Harappan Open Book',
+    'url' => 'https://harappanopenbook.github.io/',
     'cdn' => '',
 
     // content
     'content_dir' => ROOT_DIR . 'content' . DS . 'pages',
     'cards_dir' => ROOT_DIR . 'content' . DS . 'cards',
-    'output_dir' => ROOT_DIR . '_html',
+    'output_dir' => ROOT_DIR . 'docs',
     'assets_dir' => ROOT_DIR . 'assets',
 
     // menu
     'header_menu' => [
         '/' => '1. Start Here',
-        '/about-upsc/' => '2. About UPSC',
-        '/how-to-start-upsc-preparation/' => '3. How to start UPSC preparation',
-        '/resources/' => '4. Resources',
-        '/dos-and-donts/' => '5. Dos and Donts',
     ],
     'footer_menu' => [
         '/' => 'Home',
