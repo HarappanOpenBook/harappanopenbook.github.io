@@ -1,0 +1,36 @@
+name: PHP Composer
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: build the site
+      run: php blog site:build
+
+    - name: Move HTML files to docs directory
+      run: mv generated_html_directory docs
+
+    - name: Commit and Push changes
+      uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+         commit_message: "Generate static HTML files"
+         commit_user_name: "GitHub Actions"
+         commit_user_email: "actions@github.com"
+    # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
+    # Docs: https://getcomposer.org/doc/articles/scripts.md
+
+    # - name: Run test suite
+    #   run: composer run-script test
