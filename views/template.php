@@ -116,6 +116,7 @@
     </div>
 
     <footer class="text-center mt-5 p-4">
+        <p>All content on this website are powered under <a href="https://raw.githubusercontent.com/HarappanOpenBook/harappanopenbook.github.io/main/LICENSE" target="_blank">CC0 1.0 Universal</a></p>
         <p>
             <?= date('Y') ?> &copy;
             <?= config('blog.name') ?>. All rights reserved.

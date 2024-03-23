@@ -7,10 +7,10 @@ return [
     'cdn' => '',
 
     // content
-    'content_dir' => ROOT_DIR . 'content' . DS . 'pages',
-    'cards_dir' => ROOT_DIR . 'content' . DS . 'cards',
+    'content_dir' => ROOT_DIR . 'data' . DS . 'content' . DS . 'pages',
+    'cards_dir' => ROOT_DIR . 'data' . DS . 'content' . DS . 'cards',
     'output_dir' => ROOT_DIR . 'docs',
-    'assets_dir' => ROOT_DIR . 'assets',
+    'assets_dir' => ROOT_DIR . 'data' . DS . 'assets',
 
     // menu
     'header_menu' => [
