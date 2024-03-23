@@ -4,6 +4,7 @@ description: An open textbook on the Harappan Civilization.
 slug: index
 published: 2024-03-23
 updated: 2024-03-23
+next: /discovery/
 ---
 
 Welcome to this open-access textbook covering the Harappan or Indus Valley civilization of ancient South Asia (India). This book aims to provide an authoritative yet accessible introduction to this fascinating Bronze Age culture for undergraduate and advanced high school students as well as general readers.

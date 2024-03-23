@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/output.css">
+    <script type="module">
+        import * as Turbo from 'https://cdn.skypack.dev/@hotwired/turbo@7.1.0';
+    </script>
+    <style>
+        .turbo-progress-bar {
+            height: 10px;
+            background-color: red;
+        }
+
+        .dropdown-content {
+            display: none;
+        }
+
+        .dropdown-content.show {
+            display: block;
+        }
+
+        .dropdown-btn {
+            cursor: pointer;
+        }
+    </style>
+    <title>
+        Discovery of Harappan Civilization    </title>
+
+    
+</head>
+
+<body class="bg-danger-subtle">
+
+    <div class="container my-5">
+        <div class="row g-4">
+            <div class="col-md-4 col-lg-3">
+                <ul class="nav flex-column d-none d-md-block">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark text-decoration-underline fw-bolder fs-4" href="/">
+                            Harappan Open Book                        </a>
+                    </li>
+                                            <li class="nav-item">
+                            <a class="nav-link text-danger fw-bolder" href="/">
+                                1. Start Here                            </a>
+                        </li>
+                                    </ul>
+                <div class="division d-sm-block d-xs-block d-md-none d-lg-none">
+                    <a class="nav-link text-dark text-decoration-underline fw-bolder fs-4" href="/">
+                        Harappan Open Book                    </a>
+                    <div class="dropdown">
+                        <span class="dropdown-btn text-danger fw-bolder" onclick="toggleDropdown()">Menu &darr;</span>
+                        <div class="dropdown-content" id="dropdownContent">
+                            <ul class="nav flex-column">
+                                                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" href="/">
+                                            1. Start Here                                        </a>
+                                    </li>
+                                                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 col-lg-9 mx-auto">
+
+                <div class="mb-3">
+                                            <a href="/" class="btn btn-dark btn-sm">&larr; Previous</a>
+                    
+                                    </div>
+
+                <div class="bg-white rounded p-4">
+                    <h1 class="text-3xl font-bold">
+                        Discovery of Harappan Civilization                    </h1>
+
+                    <p class="lead">
+                        An open textbook on the Harappan Civilization.                    </p>
+
+                    <ul id="searchResults"></ul>
+
+                    <article class="prose prose-lg prose-green">
+                        <p>As per unit 5 of &quot;BHIC-101 History of India-I&quot; course of IGNOU:</p>
+<blockquote>
+<p>It was in 1924 that John Marshall announced to the world, the existence of an ancient civilization in the Indus valley. In retrospect, he was not the first to come across material associated with this civilization. The first person to come across Harappa was Charles Masson who identified it as an ancient city called Sangala, belonging to the time of Alexander. In 1853-1854, Alexander Cunningham visited the ruins and mistakenly concluded that the site was a Buddhist monastery. He also came across seals associated with this civilization but believed them to be of a foreign origin as they depict a bull without a hump, hence not Indian. The true significance of the ruins had to await the excavations in the early 20th century. Harappa was excavated in 1920 by Daya Ram Sahni and Mohenjo-daro by Rakhaldas Banerjee in 1921. The similarities in antiquities discovered from the two sites was recognized by Sir John Marshall, who then in 1924 announced to the world, the discovery of the oldest civilization in the subcontinent.</p>
+</blockquote>
+<p>The Harappan civilization flourished along the Indus River valley from around 2600 BCE to 1900 BCE, but it would be millennia before its existence was known to the modern world. Scattered references to cities along the Indus in ancient Greek and Indian texts provided some clues, but systematic archaeological exploration did not begin until the 19th century.</p>
+<p>In 1826, British engineer Charles Masson visited Harappa and Mohenjo-daro in present-day Pakistan, noting traces of large buildings made of burnt bricks. However, it was not until the 1920s that large-scale excavations were carried out across the Indus valley. In 1921, British archaeologist John Marshall began excavating Harappa and soon uncovered major structures and artifacts there. Concurrently, Rakhal Das Banerji was excavating the ancient city of Mohenjo-daro, unearthing its massive citadel and elaborate drainage systems.</p>
+<p>The discovery of Harappan seals engraved with yet-undeciphered script sparked intense debate around the nature and origins of this civilization. In 1924, archaeologist Ernest Mackay further explored Mohenjo-daro and Harappa, establishing the basic chronology and layout of the cities. Systematic surveys across the region in the following decades revealed over 1,000 Harappan settlements, establishing this as a highly organized urban culture.</p>
+<p>A major breakthrough came in the 1940s when archaeologist Mortimer Wheeler correlated occupational layers at Harappa and Mohenjo-daro, proving that these represented the same civilization across two millennia. This laid to rest notions that they were separate cultures and established this as a single Bronze Age civilization spread across the Indus valley. In the post-Independence period, Indian, Pakistani, American and French teams have continued excavating Harappan sites, uncovering new cities, towns and villages as well as artifacts that have expanded our understanding of this lost world. Today, the Harappan civilization is recognized as one of the three earliest urban cultures of the ancient world.</p>
+<h2>Citations</h2>
+<ul>
+<li>
+<a href="http://egyankosh.ac.in//handle/123456789/64779">Unit-5 Harappan civilization-I, BHIC-101 History of India-I, BAHIH Program, IGNOU</a>
+</li>
+</ul>
+                    </article>
+                </div>
+
+                <div class="mt-3">
+                                            <a href="/" class="btn btn-dark btn-sm">&larr; Previous</a>
+                    
+                                    </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center mt-5 p-4">
+        <p>All content on this website are powered under <a href="https://raw.githubusercontent.com/HarappanOpenBook/harappanopenbook.github.io/main/LICENSE" target="_blank">CC0 1.0 Universal</a></p>
+        <p>
+            2024 &copy;
+            Harappan Open Book. All rights reserved.
+        </p>
+    </footer>
+
+    <script>
+        function toggleDropdown() {
+            var dropdownContent = document.getElementById("dropdownContent");
+            dropdownContent.classList.toggle("show");
+        }
+    </script>
+</body>
+
+</html>
