@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php if (!DEV): ?><!-- 100% privacy-first analytics -->
+        <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+        <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt=""
+                referrerpolicy="no-referrer-when-downgrade" /></noscript>
+    <?php endif ?>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?= $title ?></title>
+    <meta name="description" content="<?= $description ?>">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+    <link rel="canonical" href="<?= $canonical ?>" />
+    <meta property="og:locale" content="<?= $lang ?>" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="<?= $title ?>" />
+    <meta property="og:description" content="<?= $description ?>" />
+    <meta property="og:url" content="<?= $canonical ?>" />
+    <meta property="og:site_name" content="<?= config('site.name') ?>" />
+    <meta property="article:published_time" content="<?= date('Y-m-d', $published) ?>" />
+    <meta property="article:modified_time" content="<?= date('Y-m-d', $updated) ?>" />
+    <?php if (isset ($image)): ?>
+        <meta property="og:image" content="<?= $image ?>" />
+        <meta property="og:image:width" content="768" />
+        <meta property="og:image:height" content="432" />
+        <meta property="og:image:alt" content="Front Page Thumbnail" />
+        <meta property="og:image:type" content="image/<?php pathinfo($image, PATHINFO_EXTENSION) ?? 'png' ?>" />
+        <meta property="og:image:secure_url" content="<?= $image ?>" />
+    <?php endif ?>
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="<?= $title ?>" />
+    <meta name="twitter:description" content="<?= $description ?>" />
+    <?php if (isset ($image)): ?>
+        <meta name="twitter:image" content="<?= $image ?>" />
+    <?php endif ?>
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="<?= config('site.name') ?>" />
+
+    <!--JSON SCHEMA-->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "<?= $title ?>",
+        <?php if (isset ($image)): ?>
+    "image": "<?= $image ?>",
+          <?php endif ?>
+        "description": "<?= $description ?>",
+          "author": {
+            "@type": "Person",
+            "name": "<?php if (isset ($author)):
+                echo $author;
+            else:
+                echo config('site.name');
+            endif; ?>"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "<?= config('site.name') ?>",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "<?= $canonical ?>"
+            }
+          },
+          "datePublished": "<?= date('Y-m-d', $published) ?>",
+          "dateModified": "<?= date('Y-m-d', $updated) ?>"
+        }
+    </script>
+    <style>
+        <?php echo (file_get_contents(ROOT_DIR . 'assets/style.css')); ?>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        header,
+        footer,
+        .btn,
+        .card,
+        .navbar,
+        .sans-serif {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-transparent navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bolder" href="/">
+                <?= config('site.name') ?>
+            </a>
+
+            <?php foreach (config('menu.header') as $link => $text): ?>
+                <a href="<?= $link ?>" class="text-decoration-non text-dark">
+                    <?= $text ?>
+                </a>
+            <?php endforeach ?>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-8 col-lg-7 mx-auto">
+
+                <h1 class="border-top border-5 border-dark mt-5 pt-2">
+                    <?= $this->e($title) ?>
+                </h1>
+
+                <p>
+                    <small class="text-muted sans-serif">
+                        <?= $this->e($description) ?>
+                    </small>
+                </p>
+
+                <?= $content ?>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid bg-dark text-white text-center p-5 mt-5">
+        <p>
+            We make commission when you purchase through our links.
+        </p>
+
+        <ul class="nav justify-content-center my-4">
+            <?php foreach (config('menu.footer') as $link => $text): ?>
+                <li class="nav-item">
+                    <a class="nav-link text-white text-decoration-underline" href="<?= $link ?>">
+                        <?= $text ?>
+                    </a>
+                </li>
+            <?php endforeach ?>
+        </ul>
+
+        <p>
+            &copy;
+            <?= date('Y') ?>, All rights reserved.
+        </p>
+    </footer>
+
+</body>
+
+</html>

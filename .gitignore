@@ -1,0 +1,8 @@
+/vendor
+/.idea
+/.vscode
+/.vagrant
+node_modules/
+.phpunit.result.cache
+auth.json
+search.json
