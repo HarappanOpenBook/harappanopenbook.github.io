@@ -1,16 +1,18 @@
 ---
 title: Discovery of Harappan Civilization
-description: An open textbook on the Harappan Civilization.
+description: The Harappan civilization flourished along the Indus River valley from around 2600 BCE to 1900 BCE.
 slug: discovery
 published: 2024-03-23
 updated: 2024-03-23
 previous: /
+next: /nomenclature/
 ---
 
 As per unit 5 of "BHIC-101 History of India-I" course of IGNOU:
 
-{.blockquote}
-> It was in 1924 that John Marshall announced to the world, the existence of an ancient civilization in the Indus valley. In retrospect, he was not the first to come across material associated with this civilization. The first person to come across Harappa was Charles Masson who identified it as an ancient city called Sangala, belonging to the time of Alexander. In 1853-1854, Alexander Cunningham visited the ruins and mistakenly concluded that the site was a Buddhist monastery. He also came across seals associated with this civilization but believed them to be of a foreign origin as they depict a bull without a hump, hence not Indian. The true significance of the ruins had to await the excavations in the early 20th century. Harappa was excavated in 1920 by Daya Ram Sahni and Mohenjo-daro by Rakhaldas Banerjee in 1921. The similarities in antiquities discovered from the two sites was recognized by Sir John Marshall, who then in 1924 announced to the world, the discovery of the oldest civilization in the subcontinent.
+<div class="card">
+<div class="card-body">It was in 1924 that John Marshall announced to the world, the existence of an ancient civilization in the Indus valley. In retrospect, he was not the first to come across material associated with this civilization. The first person to come across Harappa was Charles Masson who identified it as an ancient city called Sangala, belonging to the time of Alexander. In 1853-1854, Alexander Cunningham visited the ruins and mistakenly concluded that the site was a Buddhist monastery. He also came across seals associated with this civilization but believed them to be of a foreign origin as they depict a bull without a hump, hence not Indian. The true significance of the ruins had to await the excavations in the early 20th century. Harappa was excavated in 1920 by Daya Ram Sahni and Mohenjo-daro by Rakhaldas Banerjee in 1921. The similarities in antiquities discovered from the two sites was recognized by Sir John Marshall, who then in 1924 announced to the world, the discovery of the oldest civilization in the subcontinent.</div>
+</div>
 
 The Harappan civilization flourished along the Indus River valley from around 2600 BCE to 1900 BCE, but it would be millennia before its existence was known to the modern world. Scattered references to cities along the Indus in ancient Greek and Indian texts provided some clues, but systematic archaeological exploration did not begin until the 19th century.
 
@@ -22,4 +24,4 @@ A major breakthrough came in the 1940s when archaeologist Mortimer Wheeler corre
 
 ## Citations
 
-- [Unit-5 Harappan civilization-I, BHIC-101 History of India-I, BAHIH Program, IGNOU](http://egyankosh.ac.in//handle/123456789/64779)
+-   [Unit-5 Harappan civilization-I, BHIC-101 History of India-I, BAHIH Program, IGNOU](http://egyankosh.ac.in//handle/123456789/64779)

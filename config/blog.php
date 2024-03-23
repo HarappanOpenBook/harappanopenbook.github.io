@@ -16,6 +16,8 @@ return [
     'header_menu' => [
         '/' => '1. Start Here',
         '/discovery/' => '2. Discovery',
+        '/nomenclature/' => '3. Nomenclature',
+        '/extent/' => '4. Extent',
     ],
     'footer_menu' => [
         '/' => 'Home',
