@@ -15,6 +15,7 @@ return [
     // menu
     'header_menu' => [
         '/' => '1. Start Here',
+        '/discovery/' => '2. Discovery',
     ],
     'footer_menu' => [
         '/' => 'Home',
