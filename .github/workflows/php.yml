@@ -25,8 +25,8 @@ jobs:
     - name: build the site
       run: php blog site:build
 
-    - name: Move HTML files to docs directory
-      run: mv generated_html_directory docs
+    #- name: Move HTML files to docs directory
+    #  run: mv generated_html_directory docs
 
     - name: Commit and Push changes
       uses: stefanzweifel/git-auto-commit-action@v4
