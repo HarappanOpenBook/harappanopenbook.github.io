@@ -1,10 +1,10 @@
 ---
 title: Nomenclature of the Harappan Civilization
 description: In the initial years of its discovery, the civilization was known as the Indus Valley civilization.
-slug: discovery
+slug: nomenclature
 published: 2024-03-23
 updated: 2024-03-23
-previous: /nomenclature/
+previous: /discovery/
 ---
 
 In the early decades following its discovery in the 1920s, this ancient culture was referred to as the Indus Valley Civilization. This name was adopted because the first major sites excavated that helped identify this as a distinct civilization were located in the Indus River valley region, such as Harappa, Mohenjo-daro, and Dholavira. However, as archaeological exploration expanded after Indian independence in 1947, many additional sites dating to this period came to light across wider areas of the Indian subcontinent.
